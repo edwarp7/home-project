@@ -20,5 +20,3 @@ while ball.pos.y >= ball.radius:
     v = v + a * dt
     ball.pos = ball.pos + v * dt
     t += dt
- 
- 
