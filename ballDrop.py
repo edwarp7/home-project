@@ -9,7 +9,7 @@ ball = sphere(pos=vector(0, 100, 0), radius=5, color=color.red, make_trail=True)
 
 # Set up the physics
 g = 9.81 # acceleration due to gravity
-dt = 0.1 # time step
+dt = 0.01 # time step
 t = 0 # initial time
 v = vector(0, 0, 0) # initial velocity
 a = vector(2, -g, 0) # acceleration vector
@@ -20,3 +20,5 @@ while ball.pos.y >= ball.radius:
     v = v + a * dt
     ball.pos = ball.pos + v * dt
     t += dt
+ 
+ 
